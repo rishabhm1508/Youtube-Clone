@@ -1,20 +1,31 @@
+import { useDispatch } from "react-redux";
 import {
   hamburgerIconUrl,
   searchIcon,
   userIcon,
   youtubeLogo,
-} from "../utilities/constants";
+} from "../utils/constants";
+import { toggleSidePanelAction } from "../utils/store/app.slice";
 
 export const Header = () => {
+  const dispatcher = useDispatch();
+  const toggleSidePanel = () => {
+    dispatcher(toggleSidePanelAction());
+  };
   return (
-    <div className="flex p-1 w-full">
+    <div className="flex w-full shadow-md p-1">
       <div className="w-2/12 flex">
         <img
-          className="w-12 h-10 mt-3 ml-3 cursor-pointer p-1 hover:bg-slate-200 rounded-full"
+          onClick={toggleSidePanel}
+          className="w-12 h-10 mt-3 cursor-pointer p-1 hover:bg-slate-200 rounded-full active:bg-slate-300 active:outline-1"
           alt="humburger logo"
           src={hamburgerIconUrl}
         />
-        <img className="w-28 h-16" alt="youtube logo" src={youtubeLogo} />
+        <img
+          className="w-28 h-16 cursor-pointer"
+          alt="youtube logo"
+          src={youtubeLogo}
+        />
       </div>
 
       <div className="w-8/12 flex justify-center items-center">

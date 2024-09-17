@@ -8,3 +8,20 @@ export const searchIcon =
 
 export const userIcon =
   "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png";
+
+export const ytShortsIcon =
+  "https://i.pinimg.com/originals/17/d2/18/17d21878c22fe49e7e4752eecaa36541.png";
+
+export const homeIcon =
+  "https://static.vecteezy.com/system/resources/thumbnails/014/391/893/small/home-icon-isolated-on-transparent-background-black-symbol-for-your-design-free-png.png";
+
+export const sidePanelIcons = [
+  {
+    name: "Home",
+    url: homeIcon,
+  },
+  {
+    name: "Shorts",
+    url: ytShortsIcon,
+  },
+];
