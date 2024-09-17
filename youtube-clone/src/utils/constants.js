@@ -25,3 +25,21 @@ export const sidePanelIcons = [
     url: ytShortsIcon,
   },
 ];
+export const filterButtonsList = [
+  "All",
+  "News",
+  "Music",
+  "Trailers",
+  "Podcasts",
+  "Live",
+  "Courts",
+  "Thoughts",
+  "Thrillers",
+  "Restuarants",
+];
+
+const YT_API_KEY = "AIzaSyA7ruEghcDPLalmwth0wOKY8ZvkUbxp27s";
+
+export const youtubeVideoAPI =
+  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=50&chart=mostPopular&regionCode=IN&key=" +
+  YT_API_KEY;

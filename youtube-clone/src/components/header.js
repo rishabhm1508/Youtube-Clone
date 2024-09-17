@@ -13,7 +13,7 @@ export const Header = () => {
     dispatcher(toggleSidePanelAction());
   };
   return (
-    <div className="flex w-full shadow-md p-1">
+    <div className="flex w-full shadow-sm p-1">
       <div className="w-2/12 flex">
         <img
           onClick={toggleSidePanel}
@@ -31,7 +31,7 @@ export const Header = () => {
       <div className="w-8/12 flex justify-center items-center">
         <input className="border-2 h-10 w-8/12 p-1 rounded-l-lg border-zinc-200" />
         <img
-          className="w-12 h-10 cursor-pointer p-1 bg-zinc-100 rounded-r-lg px-1"
+          className="w-12 h-10 cursor-pointer p-1 bg-gray-100 rounded-r-lg px-"
           alt="humburger logo"
           src={searchIcon}
         />
