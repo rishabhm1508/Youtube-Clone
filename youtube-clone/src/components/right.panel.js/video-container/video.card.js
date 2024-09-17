@@ -7,7 +7,7 @@ export const VideoCard = ({ video }) => {
   return (
     <>
       <img
-        className="h-60 w-72 rounded-xl"
+        className="h-60 w-full rounded-xl"
         alt="thumb nail"
         src={thumbnails.high.url}
       />
