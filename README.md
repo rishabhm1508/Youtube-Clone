@@ -6,6 +6,7 @@
 - Tailwind
 - Webpack
 - React Router DOM
+- Redux
 
 # Architecture
 
