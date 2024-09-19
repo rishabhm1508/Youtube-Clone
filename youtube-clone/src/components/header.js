@@ -7,11 +7,12 @@ import {
 } from "../utils/constants";
 import { toggleSidePanelAction } from "../utils/store/app.slice";
 
-export const Header = () => {
+export const Header = ({ navigate }) => {
   const dispatcher = useDispatch();
   const toggleSidePanel = () => {
     dispatcher(toggleSidePanelAction());
   };
+
   return (
     <div className="flex w-full shadow-sm p-1">
       <div className="w-2/12 flex">
@@ -22,6 +23,7 @@ export const Header = () => {
           src={hamburgerIconUrl}
         />
         <img
+          onClick={() => navigate(true)}
           className="w-28 h-16 cursor-pointer"
           alt="youtube logo"
           src={youtubeLogo}

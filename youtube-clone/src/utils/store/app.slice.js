@@ -2,7 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const appSlice = createSlice({
   name: "AppSlice",
-  initialState: { sidePanelOpen: true, activeFilter: "All" },
+  initialState: {
+    sidePanelOpen: true,
+    activeFilter: "All",
+  },
   reducers: {
     toggleSidePanelAction: (state) => {
       state.sidePanelOpen = !state.sidePanelOpen;
@@ -10,8 +13,12 @@ const appSlice = createSlice({
     setActiveFilter: (state, action) => {
       state.activeFilter = action.payload;
     },
+    setSidePanelToggle: (state, action) => {
+      state.sidePanelOpen = action.payload;
+    },
   },
 });
 
-export const { toggleSidePanelAction, setActiveFilter } = appSlice.actions;
+export const { toggleSidePanelAction, setActiveFilter, setSidePanelToggle } =
+  appSlice.actions;
 export default appSlice.reducer;
