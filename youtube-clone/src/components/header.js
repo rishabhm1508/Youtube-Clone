@@ -6,8 +6,9 @@ import {
   youtubeLogo,
 } from "../utils/constants";
 import { toggleSidePanelAction } from "../utils/store/app.slice";
+import { Link } from "react-router-dom";
 
-export const Header = ({ navigate }) => {
+export const Header = () => {
   const dispatcher = useDispatch();
   const toggleSidePanel = () => {
     dispatcher(toggleSidePanelAction());
@@ -22,12 +23,13 @@ export const Header = ({ navigate }) => {
           alt="humburger logo"
           src={hamburgerIconUrl}
         />
-        <img
-          onClick={() => navigate(true)}
-          className="w-28 h-16 cursor-pointer"
-          alt="youtube logo"
-          src={youtubeLogo}
-        />
+        <Link to={"/"}>
+          <img
+            className="w-28 h-16 cursor-pointer"
+            alt="youtube logo"
+            src={youtubeLogo}
+          />
+        </Link>
       </div>
 
       <div className="w-8/12 flex justify-center items-center">

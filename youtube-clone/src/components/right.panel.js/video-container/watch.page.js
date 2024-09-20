@@ -1,7 +1,10 @@
 import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
-import { setSidePanelToggle } from "../../../utils/store/app.slice";
+import {
+  setSidePanelToggle,
+  toggleSidePanelAction,
+} from "../../../utils/store/app.slice";
 
 export const Watch = () => {
   const actionDispatcher = useDispatch();
@@ -9,6 +12,9 @@ export const Watch = () => {
   console.log(searchParam);
   useEffect(() => {
     actionDispatcher(setSidePanelToggle(false));
+    return () => {
+      actionDispatcher(toggleSidePanelAction());
+    };
   }, []);
 
   return (
