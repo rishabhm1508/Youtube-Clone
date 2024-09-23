@@ -7,8 +7,9 @@ export const LiveChatList = () => {
   const dispatcher = useDispatch();
   const chats = useSelector((store) => store.liveChatSlice.chatList);
 
+  // this all can we avoived using splice in state
   useEffect(() => {
-    if (chats.length === 100) {
+    if (chats.length === 400) {
       const ch = [...chats];
       ch.shift();
       dispatcher(removeOldestChat(ch));

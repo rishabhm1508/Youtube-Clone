@@ -89,7 +89,7 @@ export const Header = () => {
         </div>
 
         {searchSuggestions.length > 0 && showSearchSuggestions && (
-          <div className="flex flex-col absolute bg-white w-[inherit] border-[1px] shadow-lg rounded-lg max-h-60 overflow-scroll py-1">
+          <div className="flex flex-col absolute bg-white w-[inherit] border-[1px] shadow-lg rounded-lg max-h-60 overflow-scroll py-1 cursor-pointer">
             <DropdownList listStringArray={searchSuggestions} />
           </div>
         )}
