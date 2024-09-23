@@ -9,10 +9,10 @@ export const CommentsContainer = () => {
       return comment.replies.length ? (
         <>
           <Comment comment={comment} />
-          {comment.replies.map((reply) => {
+          {comment.replies.map((reply, index) => {
             return (
               <div
-                key={`${reply.id}_${reply.text}_${reply.replies.length}`}
+                key={`${reply.id}_${reply.text}_${reply.replies.length}_${index}`}
                 className="ml-10 border-l-black-100 border-l-2 pl-2"
               >
                 {generateComment(reply)}

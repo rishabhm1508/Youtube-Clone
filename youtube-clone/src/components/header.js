@@ -27,7 +27,6 @@ export const Header = () => {
   };
 
   const updateString = (searchStringEvent) => {
-    console.log(searchStringEvent.target.value);
     setSearchString(searchStringEvent.target.value);
   };
 
@@ -43,13 +42,11 @@ export const Header = () => {
     }, 300);
 
     return () => {
-      console.log("cleared");
       clearTimeout(timer);
     };
   }, [searchString]);
 
   const searchSuggestionsList = async () => {
-    console.log("searchSuggestionsList");
     const apiCall = await fetch(`${searchSuggestionsAPI}&q=${searchString}`);
     const data = await apiCall.json();
     setSearchSuggestions(data[1]);
