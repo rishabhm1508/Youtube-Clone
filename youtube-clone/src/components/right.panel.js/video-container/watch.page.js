@@ -6,11 +6,7 @@ import {
   toggleSidePanelAction,
 } from "../../../utils/store/app.slice";
 import { CommentsContainer } from "./comments/comments.container";
-import {
-  downloadIcon,
-  getVideoDetailsURL,
-  YT_API_KEY,
-} from "../../../utils/constants";
+import { getVideoDetailsURL, YT_API_KEY } from "../../../utils/constants";
 
 export const Watch = () => {
   const actionDispatcher = useDispatch();

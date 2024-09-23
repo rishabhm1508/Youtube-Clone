@@ -1,53 +1,8 @@
+import { commentsList } from "../../../../utils/constants";
 import { Comment } from "./comment";
 
 export const CommentsContainer = () => {
-  const comments = [
-    {
-      name: "Alice",
-      text: "This is the first comment...",
-      id: "1",
-      replies: [
-        {
-          name: "Bob",
-          text: "Replying to Alice...",
-          id: "23",
-          replies: [
-            {
-              name: "Charlie",
-              text: "Replying to Bob.",
-              id: "3",
-              replies: [],
-            },
-            {
-              name: "David",
-              text: "Replying to Bob.",
-              id: "4",
-              replies: [],
-            },
-          ],
-        },
-        {
-          name: "David",
-          text: "Another reply to Alice.",
-          id: "5",
-          replies: [],
-        },
-      ],
-    },
-    {
-      name: "Eve",
-      text: "This is another comment.",
-      id: "6",
-      replies: [
-        {
-          name: "Frank",
-          text: "Replying to Eve.",
-          id: "7",
-          replies: [],
-        },
-      ],
-    },
-  ];
+  const comments = [...commentsList];
 
   const generateComment = (comment) => {
     {
