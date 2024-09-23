@@ -15,6 +15,8 @@ export const ytShortsIcon =
 export const homeIcon =
   "https://static.vecteezy.com/system/resources/thumbnails/014/391/893/small/home-icon-isolated-on-transparent-background-black-symbol-for-your-design-free-png.png";
 
+export const userWorkingOnLaptop =
+  "https://ekarigartech.com/wp-content/uploads/2017/12/use-computer-png-800.png";
 export const sidePanelIcons = [
   {
     name: "Home",
