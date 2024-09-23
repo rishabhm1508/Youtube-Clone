@@ -24,20 +24,14 @@ export const sidePanelIcons = [
   {
     name: "Home",
     url: homeIcon,
-    height: 4,
-    width: 8,
   },
   {
     name: "Shorts",
     url: ytShortsIcon,
-    height: 6,
-    width: 7,
   },
   {
     name: "Subscriptions",
     url: subscriptionIcon,
-    height: 6,
-    width: 6,
   },
 ];
 
@@ -46,36 +40,26 @@ export const subcriptions = [
     imgUrl:
       "https://yt3.ggpht.com/mR4d9sOINdICVY5lbTmsyV1NG2JRzYcvDrC8isQQqdct5YbQ3vQ0acJhL7PIJKiIOaVM2yZJbg=s88-c-k-c0x00ffffff-no-rj",
     name: "Crime Tak",
-    height: 6,
-    width: 6,
   },
   {
     imgUrl:
       "https://yt3.ggpht.com/4tpv3CE1alB7ayIk-y1ktHsang1dMJkGf4f4dazy55G8j8Y0nGkEYnxNJ30JYOiPf6cCaaMARQ=s88-c-k-c0x00ffffff-no-rj",
     name: "Lallantop",
-    height: 6,
-    width: 6,
   },
   {
     imgUrl:
       "https://yt3.ggpht.com/ytc/AIdro_lqpTX-PfEcpcKqh8-_2mVyD5WsXPfpYHl5xWOJKFJoAVo=s88-c-k-c0x00ffffff-no-rj",
     name: "Indian Express",
-    height: 6,
-    width: 6,
   },
   {
     imgUrl:
       "https://yt3.ggpht.com/ytc/AIdro_lg4F-cAjPawqprjSRRiE_P_WzONwz3o4lroqonI5Rz4A=s88-c-k-c0x00ffffff-no-rj",
     name: "Loose Talk",
-    height: 6,
-    width: 6,
   },
   {
     imgUrl:
       "https://yt3.ggpht.com/bOmqDNEBUJods7e6RnKi8ML_8-IW39uBuHwURGrPstqnu3X_iyO02EedWwQx2jpvBpK9HNax=s88-c-k-c0x00ffffff-no-rj",
     name: "National Geographic",
-    height: 6,
-    width: 6,
   },
 ];
 
