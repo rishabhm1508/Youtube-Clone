@@ -5,6 +5,7 @@ const appSlice = createSlice({
   initialState: {
     sidePanelOpen: true,
     activeFilter: "All",
+    searchResultsCache: {},
   },
   reducers: {
     toggleSidePanelAction: (state) => {
@@ -16,9 +17,24 @@ const appSlice = createSlice({
     setSidePanelToggle: (state, action) => {
       state.sidePanelOpen = action.payload;
     },
+    setSearchResultsCache: (state, action) => {
+      state.searchResultsCache[action.payload.searchString] =
+        action.payload.searchResults;
+
+      // //better way, but not working, check it out.
+      // state.searchResultsCache = {
+      //   ...action.payload,
+      //   ...state.searchResultsCache,
+      // };
+      // We can use LRU for better perf.. once cache becomes more than 100, remove older onces.
+    },
   },
 });
 
-export const { toggleSidePanelAction, setActiveFilter, setSidePanelToggle } =
-  appSlice.actions;
+export const {
+  toggleSidePanelAction,
+  setActiveFilter,
+  setSidePanelToggle,
+  setSearchResultsCache,
+} = appSlice.actions;
 export default appSlice.reducer;
