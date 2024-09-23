@@ -19,4 +19,4 @@
 - Watch page has video details with subscribe / unsubsribe button, like / dislike button, download button ( non functional ).
 - Nested Comments .
 - Live chat with ability to add your chat ( saves latest 100 chats ).
-- Live chat adds chat every 200ms.
+- Live chat updates chat every 200ms.
